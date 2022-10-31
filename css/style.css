@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Home-And-Work;
+  src: url('../fonts/Home-And-Work.otf') format('opentype');
+  font-weight: thin;
+  font-style: normal;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: lightblue;
+}
+
+@media screen {
+  .text {
+    border: 1px solid black;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: teal;
+  }
+
+  .text2 {
+    border: 1px solid black;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: white;
+  }
+}
+
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: row;
+    }
+  }
+}
